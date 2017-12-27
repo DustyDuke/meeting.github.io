@@ -743,22 +743,7 @@ margin-top: 100px;
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
 	.navbar .nav-link {
-width: 70%;
-		float: none;
-		text-align: center;
-		display: block;
 		border-bottom: 1px solid #fff;
-	}
-	.navbar-nav {
-		width: 40%;
-		margin-left: 10px;
-	}
-	.navbar-brand {
-		float: left;
-		display: inline-block;
-	}
-	.navbar {
-		margin-bottom: 60px;
 	}
 		td {
 	padding-right: 30px;
