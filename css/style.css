@@ -742,9 +742,6 @@ margin-top: 100px;
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-	.navbar .nav-link {
-		border-bottom: 1px solid #fff;
-	}
 		td {
 	padding-right: 30px;
 	padding-bottom: 15px;
