@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Temple</title>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400, 700, 900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+       <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.css">
+        <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.css">
+</head>
+<body>
+<header>
+
+<div class="navbar">
+<div class="container">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					 <a class="navbar-brand" href="#" id="envato"> </a>
+    <ul class="nav navbar-nav navbar-right">
+      <li class="nav-link"><a href="#details" >event details</a></li>
+      <li class="nav-link"><a href="#speakers">speakers</a></li>
+	  <li class="nav-link"><a href="#sponsors">sponsors</a></li>
+	  <li class="nav-link"><a href="#past">past events</a></li>
+	  <li class="nav-link"><a href="#contact">contact</a></li>
+    </ul>
+  </div>
+</div>
+</div>
+<div class="container">
+<div class="timer" id="timer">
+<table>
+<tr>
+        <th><div id="day">20</div>&nbsp;:&nbsp;</th>
+        <th><div id="hour">13</div>&nbsp;:&nbsp</th>
+        <th><div id="minute">15</div>&nbsp;:&nbsp</th>
+        <th><div id="second">2</div></th>
+		</tr>
+<tr>
+ <td><div class="timer-names">days</div></td>
+     <td><div class="timer-names">hours</div></td>
+     <td><div class="timer-names">minutes</div></td>
+        <td><div class="timer-names">seconds</div></td>
+		</tr>
+		</table>
+ </div>
+</div>
+<script>
+window.onload = function(){ 
+    function timer(){
+	
+	     var day = document.getElementById('day').innerHTML;
+        var hour = document.getElementById('hour').innerHTML;
+        var minute = document.getElementById('minute').innerHTML;
+        var second = document.getElementById('second').innerHTML;
+        var end = false;
+
+        if( second > 0 )  second--;
+            else{
+                second = 60;
+  
+            if( minute > 0 )  minute--;
+            else{
+                minute = 60;
+                 
+                if( hour > 0 ) hour--;
+                else{ hour = 23;	
+            
+			if( day > 0 ) day--;
+			else{ end = true;
+			 
+		}
+		}
+		}
+ }
+
+        if(end){
+            clearInterval(intervalID);
+            alert("Время вышло!");
+        }
+		else{
+		    document.getElementById('day').innerHTML = day;
+            document.getElementById('hour').innerHTML = hour;
+            document.getElementById('minute').innerHTML = minute;
+            document.getElementById('second').innerHTML = second;
+        }
+}
+    window.intervalID = setInterval(timer, 1000);
+
+}
+</script>
+
+
+
+<ul class="icons">
+<li class="icon1"></li>
+<li class="icon2"></li>
+<li class="icon3"></li>
+<li class="icon4"></li>
+<li class="icon5"></li>
+</ul>
+<div class="gradient"></div>
+<div class="cover"></div>
+</header>
+<main>
+<div class="welcome" id="details">
+<div class="container">
+<div class="row">
+<div class="col-sm-12 col-md-6">
+<h1>Welcome!</h1>
+<p>The biggest envato community meetup in Bangladesh is happening right now! And you can be a part of it too...</p>
+<p>get together with members of Envato community to talk shop, trade war stories, make new friends and see the faces behind the avatars. Whether you're an author on Envato Market, client on Envato Studio, or a learner on Tuts+, you're invited!</p>
+<p>It doesen't matter as ;long as you have the motivation and interest to work at thr envato and bring cookies to our event. Just kidding, but we don't mind having more cookies!;) Head jver and fill up sign up form here so we can keep track of our guestd. Don't forget to register on our <b>invite</b> page here too!</p>
+</div>
+<div class="col-sm-12 col-md-6">
+<form class="feedback-form" action="#" method="post">
+<h2>Sign up for event</h2>
+<input type="text" class="text" value="Name Surname" name="name" id="name">
+<input type="text" class="text" value="Enter your-mail" name="e-mail" id="e-mail">
+<input type="text" class="text" value="Phone number" name="phone" id="phone">
+<input type="text" class="text" value="Envato username" name="phone" id="username">
+<input type="submit" value="Let me in!">
+<p>Hurry up. Limited seats available</p>
+<p>*we will never spam your email</p>
+</form>
+</div>
+</div>
+</div>
+</div>
+<div class="talk">
+<div class="container">
+<div class="row">
+<div class="col-sm-12 col-md-4">
+<img src="img/icon1.png" alt="icon1" height="201px" width="200px">
+<h1>Community</h1>
+<p>Meet the community you're have always talked with, in real life! This meeyup will be all about authors, engaging each other with interesting coversation and topics. we will have loads of fun.</p>
+</div>
+<div class="col-sm-12 col-md-4">
+<img src="img/icon2.png" alt="icon2" height="201px" width="200px">
+<h1>Talk Shop</h1>
+<p>In this meetup you will get to know the marketplaces better, because that's why were all here for right? learn a few tips and tricks from experienced authors from all over the country.</p>
+</div>
+<div class="col-sm-12 col-md-4">
+<img src="img/icon3.png" alt="icon3" height="201px" width="200px">
+<h1>War Stories</h1>
+<p>Gather round fellow authors!</p>
+<p>Hear the stories of success from your favourite authors and learn how they we able to tackle their problems and become successful.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="table">
+<div class="row-1">
+                <div class="cell caption">Time</div>
+                <div class="cell caption">Stuff that will happen</div>
+				<div class="cell caption"></div>
+            </div>
+<div class="row-1">
+                <div class="cell">10am-12pm</div>
+                <div class="cell">Introduction and presentations about Envato</span></div>
+				<div class="cell"><span class="glyphicon glyphicon-plus-sign"></span></div>
+            </div>
+<div class="row-1">
+                <div class="cell">12pm-02pm</div>
+                <div class="cell">Sessions by honorable guests and Speakers</div>
+				<div class="cell"><span class="glyphicon glyphicon-plus-sign"></span></div>
+            </div>
+<div class="row-1">
+                <div class="cell">02pm-03pm</div>
+                <div class="cell">Break and Mingle time with the authors</div>
+				<div class="cell"><span class="glyphicon glyphicon-plus-sign"></span></div>
+            </div>
+<div class="row-1">
+                <div class="cell last">03pm-05pm</div>
+                <div class="cell last">Portfolio Rewiew, Rewards and Ending Presentation</div>
+				<div class="cell last"><span class="glyphicon glyphicon-plus-sign"></span></div>
+            </div>
+</div>
+
+<p class="comment">Please keep in mind the timings may differ according to the flow of the event. The even is acrually day long and we do plan to finish it whithib our set time but it doesn't have to be, if we all agree to hangour for some time more, what harm could it do? :)</p>
+
+<div class="tip"><img src="img/EliteBadge.png" alt="badge" height="357px" width="354px">
+</div>
+</div>
+<div class="gradient"></div>
+<div class="rewards">
+<div class="container">
+<div class="rewards-position">
+<h1>We reward the Elites!</h1>
+<p>Are you Elite author in the Envato Marketplaces? If so we are proud of you! We want to give our thanks in acheiving great success in thr marketplace and we are want to make known to the people of our country that you are amazing! Our Elite gifting programm includes giving your special merchandize from our community and also promote your works in our community.</p>
+<p class="short">All you have to do is contact us by clicing the button here and then just going to the event, saying something motivational and talking that swag while looking amazing infront of thousands of otheir community members.</p>
+<p>*Be advised, we will only give you Elite thank you swag for each level of elite you cross.
+<br> That means if you do not cross to the next level before the next event, you cannot claim your prizes.</p>
+<button type="button" class="btn" data-toggle="modal" data-target="#EliteModal">Bring on the Swag!</button>
+<div class="modal fade" id="EliteModal" tabindex="-1" role="dialog" aria-labelledby="EliteModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+     <div class="modal-header">
+    <h2 id="EliteModalLabel">Author's Form</h2>
+  </div>
+  <div class="modal-body">
+    <form class="feedback-form" action="#" method="post">
+<input type="text" class="text" value="Name Surname" name="name" id="name">
+<input type="text" class="text" value="Enter your-mail" name="e-mail" id="e-mail">
+<input type="text" class="text" value="Phone number" name="phone" id="phone">
+<input type="text" class="text" value="Envato username" name="phone" id="username">
+</form>
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+    <button class="btn">Submit</button>
+  </div>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+<div class="gradient-reverse">
+</div>
+<div class="container">
+<div class="speakers" id="speakers">
+<h1>Speakers</h1>
+<p>Meet our Valuable speakers who will be each giving 10 minutes sessions on different subjects regarding being a digital product author, working at Envato and marketing your business.<br>
+Hoping you will have a great time listening to our presentations!</p>
+<div class="row hidden-xs">
+<div class="squares">
+<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+<div class="square"></div>
+<div class="square"></div>
+<div class="square"></div>
+</div>
+<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+<div class="square filled">
+<h1>Shahriyer Shuvo</h1>
+<svg width="100" height="10">
+<line x1="30" x2="250" stroke="white" stroke-width="10"/>
+</svg>
+<p>More about selling in the Envato Marketplaces</p>
+<a class="social facebook" href="#" target="_blank"></a>
+<a class="social twitter" href="#" target="_blank"></a>
+<a class="social behance" href="#" target="_blank"></a>
+<a class="social dribbble" href="#" target="_blank"></a>
+</div>
+<div class="victory"></div>
+<div class="square"></div>
+</div>
+<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+<div class="square"></div>
+<div class="square"></div>
+<div class="square"></div>
+</div>
+</div>
+</div>
+ <div class="owl-carousel owl-theme visible-xs">
+ <div class="carousel-item square filled">
+ <h1>Shahriyer Shuvo</h1>
+<svg width="100" height="10">
+<line x1="30" x2="250" stroke="white" stroke-width="10"/>
+</svg>
+<p>More about selling in the Envato Marketplaces</p>
+<a class="social facebook" href="#" target="_blank"></a>
+<a class="social twitter" href="#" target="_blank"></a>
+<a class="social behance" href="#" target="_blank"></a>
+<a class="social dribbble" href="#" target="_blank"></a>
+</div>
+<div class="carousel-item victory"></div>
+<div class="carousel-item square"></div>
+<div class="carousel-item square"></div>
+<div class="carousel-item victory"></div>
+<div class="carousel-item square"></div>
+<div class="carousel-item square"></div>
+<div class="carousel-item victory"></div>
+<div class="carousel-item square"></div>
+  </div>     
+      <script>
+    $(document).ready(function() {
+  $(".owl-carousel").owlCarousel();
+ 
+});
+          </script>    
+
+</div>
+</div>
+<div class="gradient">
+</div>
+<div class="sponsor" id="sponsor">
+<div class="container">
+
+<h1>Sponsor Our Event!</h1>
+<p>If you want to help us making this event lively and successful, help us by sponsoring our event!
+This will help us bring in more people, have better livestreaming equipment, maybe even oue own chef! You can also sponsor us by giving away free swag at the event!</p>
+<p>Here's who have sponsored us already:</p>
+<a class="sponsorship rock" href="#" target="_blank"></a>
+<a class="sponsorship road" href="#" target="_blank"></a>
+<a class="sponsorship envato" href="#" target="_blank"></a>
+		<button type="button" class="btn" data-toggle="modal" data-target="#SponsorModal">Sponsor Us</button>
+<div class="modal fade" id="SponsorModal" tabindex="-1" role="dialog" aria-labelledby="SponsorModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+     <div class="modal-header">
+    <h2 id="EliteModalLabel">Sponsor's Form</h2>
+  </div>
+  <div class="modal-body">
+    <form class="feedback-form" action="#" method="post">
+<input type="text" class="text" value="Name Surname" name="name" id="name">
+<input type="text" class="text" value="Enter your-mail" name="e-mail" id="e-mail">
+<input type="text" class="text" value="Phone number" name="phone" id="phone">
+<input type="text" class="text" value="Envato username" name="phone" id="username">
+</form>
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+    <button class="btn">Submit</button>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="gradient-reverse">
+</div>
+<div class="past" id="past">
+<div class="container">
+<h1>Past Events</h1>
+<p>Check out photos of events where we rocked with a lot of Famous and enthusiatic authors! We're always planing our future events feel fresh and fun to be at. :)</p>
+</div>
+</div>
+<ul class="colors">
+<li class="color blue"></li>
+<li class="color green"></li>
+<li class="color orange"></li>
+<li class="color red"></li>
+</ul>
+<button class="btn-black">Viev more</button>
+<div class="contact" id="contact">
+<div class="message">
+<div class="row">
+<div class="col-sm-12 col-md-6">
+<p>Lorem ipsum Avenue, 420/2 elm Street, Melbourne, Sydney - 2122, Kingdom of Australlia</p>
+<button class="btn hidden-xs" data-toggle="modal" data-target="#MapModal">View Map</button>
+<div class="modal fade" id="MapModal" tabindex="-1" role="dialog" aria-labelledby="MapModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+	   <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3096.937460400718!2d-77.48896978438746!3d39.0851222434614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b63c6ec60fa7d7%3A0xfad6b5fe6dffe4a8!2zQ290b24gSGFsbCBTdCwgTGVlc2J1cmcsIFZBIDIwMTc2LCDQodCo0JA!5e0!3m2!1sru!2sru!4v1512750703655" width="500" height="500" frameborder="0" style="border:0" allowfullscreen>
+		</iframe>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="col-sm-12 col-md-6">
+<form class="question-form" action="#" method="post">
+<input type="text" class="text" value="ingeniousartist@gmail.com" name="mail" id="mail">
+<textarea name="mail" id="mail" rows="8">Type your message</textarea>
+<input type="submit" value="Send Message">
+</form>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer>
+<div class="container">
+<div class="theme">
+
+<a class="ourlinks facebook1" href="#" target="_blank"></a>
+<a class="ourlinks twitter1" href="#" target="_blank"></a>
+<a class="ourlinks linkedin" href="#" target="_blank"></a>
+<a class="ourlinks google" href="#" target="_blank"></a>
+<a class="ourlinks tumblr" href="#" target="_blank"></a>
+</div>
+<p>Hope we see you at the event!</p>
+<p>All Rightts Reserved. Envato Bangladesh <span class="glyphicon glyphicon-copyright-mark"></span> 2015
+<a href="#envato" class="glyphicon glyphicon-chevron-up"></a></p>
+
+</div>
+</footer>
+<script src="js/jquery.min.js"></script>
+	<script src="owlcarousel/owl.carousel.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
