@@ -36,7 +36,9 @@ button .icon-bar,
 .navbar-nav {
 	margin: 20px 0;
 }
-
+.navbar-brand {
+position: absolute;	
+}
 .navbar-nav .nav-link a:hover {
 	color: #000;
 	background: #90d23d;
@@ -900,9 +902,11 @@ left: 35%;
 	.container {
 		padding: 0 70px;
 	}
-	.nav-link {
-		width: 70%;
+	.navbar .nav-link {
 		margin-left: 40px;
+	}
+	.navbar ul {
+	padding-top: 50px;	
 	}
 		td {
 	padding-right: 25px;
@@ -935,7 +939,6 @@ main .gradient-reverse {
 }
 .icons {
 	transform: scale(0.5);
-	float: left;
 }
 .welcome form {
 	margin-bottom: 0;
@@ -1018,9 +1021,6 @@ max-height: 250px;
 	.container {
 		padding: 0 20px;
 	}
-	.navbar .nav-link {
-		width:70%;
-	}
 	.timer {
 		max-width: 400px;
 	}
@@ -1047,7 +1047,7 @@ main .gradient-reverse {
 }
 .icons {
 	transform: scale(0.4);
-	float: left;
+	right: 35px;
 }
 .rewards-position {
 		width: 100%;
