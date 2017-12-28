@@ -1106,7 +1106,7 @@ left: 10%;
 .owl-carousel .victory,
 .owl-carousel .filled {
 	transform: scale(0.3);
-	right: 90px;
+	right: 100px;
 	bottom: 60px;
 }
 .owl-item {
