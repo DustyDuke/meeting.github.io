@@ -938,6 +938,7 @@ main .gradient-reverse {
 }
 .filled p {
 	text-align: left;
+	margin-left: 20px;
 	}
 .sponsorship::before {
 	transform: scale(0.6);
