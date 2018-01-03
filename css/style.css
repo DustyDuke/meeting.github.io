@@ -938,7 +938,6 @@ main .gradient-reverse {
 }
 .filled p {
 	text-align: left;
-	margin-left: 20px;
 	}
 .sponsorship::before {
 	transform: scale(0.6);
@@ -1013,10 +1012,10 @@ max-height: 250px;
 .timer-names {
 	font-size: 12px;
 }
-	th {
+th {
 	font-size: 28px;
 }
-	td:last-child {
+td:last-child {
 	padding-right: 0;
 }
 .timer {
@@ -1051,6 +1050,7 @@ main .gradient-reverse {
 }
 .filled p {
 	text-align: left;
+	margin-left: 20px;
 }
 	.sponsor .btn {
 	margin-bottom: 20px;	
