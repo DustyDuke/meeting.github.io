@@ -56,50 +56,7 @@
 		</table>
  </div>
 </div>
-<script>
-window.onload = function(){ 
-    function timer(){
-	
-	     var day = document.getElementById('day').innerHTML;
-        var hour = document.getElementById('hour').innerHTML;
-        var minute = document.getElementById('minute').innerHTML;
-        var second = document.getElementById('second').innerHTML;
-        var end = false;
 
-        if( second > 0 )  second--;
-            else{
-                second = 60;
-  
-            if( minute > 0 )  minute--;
-            else{
-                minute = 60;
-                 
-                if( hour > 0 ) hour--;
-                else{ hour = 23;	
-            
-			if( day > 0 ) day--;
-			else{ end = true;
-			 
-		}
-		}
-		}
- }
-
-        if(end){
-            clearInterval(intervalID);
-            alert("Время вышло!");
-        }
-		else{
-		    document.getElementById('day').innerHTML = day;
-            document.getElementById('hour').innerHTML = hour;
-            document.getElementById('minute').innerHTML = minute;
-            document.getElementById('second').innerHTML = second;
-        }
-}
-    window.intervalID = setInterval(timer, 1000);
-
-}
-</script>
 
 
 
@@ -287,12 +244,7 @@ Hoping you will have a great time listening to our presentations!</p>
 <div class="carousel-item victory"></div>
 <div class="carousel-item square"></div>
   </div>     
-      <script>
-    $(document).ready(function() {
-  $(".owl-carousel").owlCarousel();
- 
-});
-          </script>    
+    
 
 </div>
 </div>
@@ -396,5 +348,6 @@ This will help us bring in more people, have better livestreaming equipment, may
 <script src="js/jquery.min.js"></script>
 	<script src="owlcarousel/owl.carousel.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+<script src="js/mainjs.js"></script>
 </body>
 </html>
