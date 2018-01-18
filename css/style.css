@@ -39,6 +39,11 @@ button .icon-bar,
 .navbar-brand {
 position: absolute;	
 }
+.navbar-brand:focus,
+.navbar-brand:active {
+outline: none;
+box-shaow: none;
+}
 .navbar-nav .nav-link a:hover {
 	color: #000;
 	background: #90d23d;
@@ -267,12 +272,14 @@ main p {
 .btn:active,
 .btn:focus {
 	outline: none;
+	box-shadow: none;
 }
 .btn:hover {
 	font-size: 20px;
 	font-weight: 700;
 	color: #fff;
 	transition: 0.3s;
+	outline: none;
 }
 .welcome h1 {
 	margin-top: 0;
@@ -966,9 +973,6 @@ left: 35%;
 	.container {
 		padding: 0 70px;
 	}
-	.navbar-brand {
-	position: relative;
-}
 	.navbar .nav-link {
 		margin-left: 40px;
 	}
