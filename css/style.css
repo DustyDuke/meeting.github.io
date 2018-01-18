@@ -262,6 +262,11 @@ main p {
 	width: 200px;
 	height: 60px;
 	vertical-align: middle;
+	outline: none;
+}
+.btn:active,
+.btn:focus {
+	outline: none;
 }
 .btn:hover {
 	font-size: 20px;
@@ -817,7 +822,7 @@ margin-top: 100px;
 @media only screen and (max-width : 992px) {
 .navbar-brand {
 	position: absolute;
-	top: 15px;
+	top: 0;
 }
 		td {
 	padding-right: 30px;
