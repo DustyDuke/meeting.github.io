@@ -267,11 +267,9 @@ main p {
 	width: 200px;
 	height: 60px;
 	vertical-align: middle;
-	outline: none;
-	box-shaow: none;
 }
-.btn:active,
-.btn:focus {
+button:active,
+button:focus {
 	outline: none;
 	box-shadow: none;
 }
@@ -280,8 +278,6 @@ main p {
 	font-weight: 700;
 	color: #fff;
 	transition: 0.3s;
-	outline: none;
-	box-shaow: none;
 }
 .welcome h1 {
 	margin-top: 0;
