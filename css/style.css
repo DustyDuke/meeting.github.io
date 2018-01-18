@@ -815,6 +815,10 @@ margin-top: 100px;
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
+.navbar-brand {
+	position: absolute;
+	top: 15px;
+}
 		td {
 	padding-right: 30px;
 	padding-bottom: 15px;
@@ -957,6 +961,9 @@ left: 35%;
 	.container {
 		padding: 0 70px;
 	}
+	.navbar-brand {
+	position: relative;
+}
 	.navbar .nav-link {
 		margin-left: 40px;
 	}
