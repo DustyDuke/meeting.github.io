@@ -47,7 +47,6 @@ box-shaow: none;
 .navbar-nav .nav-link a:hover {
 	color: #000;
 	background: #90d23d;
-	border: 1px solid #90d23d;
 	border-radius: 5px;
 	font-weight: 300;
 }
