@@ -42,9 +42,3 @@ window.onload = function(){
 }
 
 
-
-    $(document).ready(function() {
-  $(".owl-carousel").owlCarousel();
- 
-});
-  
