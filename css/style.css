@@ -107,6 +107,40 @@ td {
 .icons li {
 	display: inline-block;
 }
+@-moz-keyframes rotation {
+	0% {
+		-moz-transform: rotate(0deg);
+	}
+	25% {
+		-moz-transform: rotate(30deg);
+		}
+		50% {
+		-moz-transform: rotate(0deg);	
+		}
+		75% {
+		-moz-transform: rotate(-30deg);	
+		}
+		100% {
+		-moz-transform: rotate(0deg);
+		}
+}
+@-webkit-keyframes rotation {
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+	25% {
+		-webkit-transform: rotate(30deg);
+		}
+		50% {
+		-webkit-transform: rotate(0deg);	
+		}
+		75% {
+		-webkit-transform: rotate(-30deg);	
+		}
+		100% {
+		-webkit-transform: rotate(0deg);
+		}
+}
 @keyframes rotation {
 	0% {
 		transform: rotate(0deg);
@@ -122,6 +156,40 @@ td {
 		}
 		100% {
 			transform: rotate(0deg);
+		}
+}
+@-moz-keyframes rotation2 {
+	0% {
+		-moz-transform: rotate(0deg);
+	}
+	25% {
+		-moz-transform: rotate(20deg);
+		}
+		50% {
+		-moz-transform: rotate(0deg);	
+		}
+		75% {
+		-moz-transform: rotate(-20deg);	
+		}
+		100% {
+		-moz-transform: rotate(0deg);
+		}
+}
+@-webkit-keyframes rotation2 {
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+	25% {
+		-webkit-transform: rotate(20deg);
+		}
+		50% {
+		-webkit-transform: rotate(0deg);	
+		}
+		75% {
+		-webkit-transform: rotate(-20deg);	
+		}
+		100% {
+		-webkit-transform: rotate(0deg);
 		}
 }
 @keyframes rotation2 {
@@ -141,6 +209,40 @@ td {
 			transform: rotate(0deg);
 		}
 }
+@-moz-keyframes rotation3 {
+	0% {
+		-moz-transform: rotate(0deg);
+	}
+	25% {
+		-moz-transform: rotate(35deg);
+		}
+		50% {
+		-moz-transform: rotate(0deg);	
+		}
+		75% {
+		-moz-transform: rotate(-35deg);	
+		}
+		100% {
+		-moz-transform: rotate(0deg);
+		}
+}
+@-webkit-keyframes rotation3 {
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+	25% {
+		-webkit-transform: rotate(35deg);
+		}
+		50% {
+		-webkit-transform: rotate(0deg);	
+		}
+		75% {
+		-webkit-transform: rotate(-35deg);	
+		}
+		100% {
+		-webkit-transform: rotate(0deg);
+		}
+}
 @keyframes rotation3 {
 	0% {
 		transform: rotate(0deg);
@@ -158,7 +260,11 @@ td {
 			transform: rotate(0deg);
 		}
 }
-.icon1 {
+.icon1,
+.icon2,
+.icon3,
+.icon4,
+.icon5 {
 	background-image: url("../img/Icon 1.png");
 	background-repeat: no-repeat;
 	height: 207px;
@@ -166,76 +272,109 @@ td {
 	position: absolute;
 	left: 120px;
 	z-index: 10;
+	-webkit-animation-name: rotation;
+	-moz-animation-name: rotation;
+	-o-animation-name: rotation;
+	-ms-animation-name: rotation;
 	animation-name: rotation;
+	-webkit-animation-duration: 2s;
+	-moz-animation-duration: 2s;
+	-o-animation-duration: 2s;
+	-ms-animation-duration: 2s;
 	animation-duration: 2s;
+	-webkit-animation-timing-function: linear;
+	-moz-animation-timing-function: linear;
+	-o-animation-timing-function: linear;
+	-ms-animation-timing-function: linear;
 	animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	-moz-animation-iteration-count: infinite;
+	-o-animation-iteration-count: infinite;
+	-ms-animation-iteration-count: infinite;
 	animation-iteration-count: infinite;
 }
 .icon2 {
 	background-image: url("../img/Icon 2.png");
-	background-repeat: no-repeat;
-	height: 207px;
-	width: 192px;
-	position: absolute;
 	left: 250px;
 	top: -15px;
 	z-index: 9;
+	-webkit-animation-name: rotation2;
+	-moz-animation-name: rotation2;
+	-o-animation-name: rotation2;
+	-ms-animation-name: rotation2;
 	animation-name: rotation2;
-	animation-duration: 2s;
-	animation-direction: reverse;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
 }
 .icon3 {
 	background-image: url("../img/Icon 3.png");
-	background-repeat: no-repeat;
-	height: 207px;
-	width: 192px;
-	position: absolute;
 	left: 375px;
 	top: -30px;
 	z-index: 8;
-	animation-name: rotation;
+	-webkit-animation-duration: 1.5s;
+	-moz-animation-duration: 1.5s;
+	-o-animation-duration: 1.5s;
+	-ms-animation-duration: 1.5s;
 	animation-duration: 1.5s;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
 }
 .icon4 {
 	background-image: url("../img/Icon 4.png");
-	background-repeat: no-repeat;
-	height: 207px;
-	width: 192px;
-	position: absolute;
 	left: 510px;
 	top: -45px;
 	z-index: 7;
+	-webkit-animation-name: rotation3;
+	-moz-animation-name: rotation3;
+	-o-animation-name: rotation3;
+	-ms-animation-name: rotation3;
 	animation-name: rotation3;
-	animation-duration: 2s;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
 }
 .icon5 {
 	background-image: url("../img/Icon 5.png");
-	background-repeat: no-repeat;
-	height: 207px;
-	width: 192px;
-	position: absolute;
 	left: 640px;
 	top: -50px;
 	z-index: 6;
-	animation-name: rotation;
+	-webkit-animation-duration: 2.5s;
+	-moz-animation-duration: 2.5s;
+	-o-animation-duration: 2.5s;
+	-ms-animation-duration: 2.5s;
 	animation-duration: 2.5s;
-	animation-direction: reverse;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
 }
-header .gradient {
-	background-image: linear-gradient(to bottom right, transparent 50%, #fff 50%);
+.icon2,
+.icon5 {
+	-webkit-animation-direction: reverse;
+	-moz-animation-direction: reverse;
+	-o-animation-direction: reverse;
+	-ms-animation-direction: reverse;
+	animation-direction: reverse;
+}
+header .gradient,
+main .gradient,
+main .gradient-reverse {
 	background-repeat: no-repeat;
 	position: relative;
 	height: 120px;
 	width: 100%;
+}
+header .gradient {
+	-moz-background-image: linear-gradient(to bottom right, transparent 50%, #fff 50%);
+	-webkit-background-image: linear-gradient(to bottom right, transparent 50%, #fff 50%);
+	-o-background-image: linear-gradient(to bottom right, transparent 50%, #fff 50%);
+	-ms-background-image: linear-gradient(to bottom right, transparent 50%, #fff 50%);
+	background-image: linear-gradient(to bottom right, transparent 50%, #fff 50%);
 	z-index: 11;
+}
+main .gradient {
+	-moz-background-image: linear-gradient(to bottom right, transparent 50%, #4e494e 50%);
+	-webkit-background-image: linear-gradient(to bottom right, transparent 50%, #4e494e 50%);
+	-o-background-image: linear-gradient(to bottom right, transparent 50%, #4e494e 50%);
+	-ms-background-image: linear-gradient(to bottom right, transparent 50%, #4e494e 50%);
+	background-image: linear-gradient(to bottom right, transparent 50%, #4e494e 50%);
+	margin-top: 155px;
+}
+main .gradient-reverse {
+	-moz-background-image: linear-gradient(to bottom right, #4e494e 50%, #fff 50%);
+	-webkit-background-image: linear-gradient(to bottom right, #4e494e 50%, #fff 50%);
+	-o-background-image: linear-gradient(to bottom right, #4e494e 50%, #fff 50%);
+	-ms-background-image: linear-gradient(to bottom right, #4e494e 50%, #fff 50%);
+	background-image: linear-gradient(to bottom right, #4e494e 50%, #fff 50%);
 }
 .cover {
 	background: #fff;
@@ -255,6 +394,10 @@ main p {
 	margin-bottom: 25px;
 	color: #242424;
 	font-weight: 300;
+}
+.tip {
+	position: relative;
+	z-index: 100;
 }
 .btn {
 	background: #90d23d;
@@ -397,20 +540,14 @@ input[type="submit"]:hover {
 	text-align: center;
 	margin: 0 140px;
 }
-main .gradient {
-	background-image: linear-gradient(to bottom right, transparent 50%, #4e494e 50%);
-	background-repeat: no-repeat;
-	height: 120px;
-	width: 100%;
-	z-index: 11;
-	margin-top: 155px;
-}
 .tip {
 	position: relative;
 	height: 0;
 	top: 80px;
 }
-.rewards {
+.rewards,
+.sponsor .modal-footer,
+.rewards-position .modal-footer {
 	background: #4e494e;
 }
 .rewards-position {
@@ -436,21 +573,10 @@ main .gradient {
 	color: #fff;
 	text-align: center;
 }
-.sponsor .modal-footer,
-.rewards-position .modal-footer {
-	background: #4e494e;
-}
 .modal-footer .btn {
 	width: 100px;
 	height: 40px;
 	vertical-align: middle;
-}
-main .gradient-reverse {
-	background-image: linear-gradient(to bottom right, #4e494e 50%, #fff 50%);
-	background-repeat: no-repeat;
-	position: relative;
-	height: 120px;
-	width: 100%;
 }
 .speakers p,
 .past p  {
@@ -523,7 +649,6 @@ margin-top: 150px;
 	background-position: -354px -52px;
 	left: 160px;
 }
-
 #owl-carousel .carousel-item {
   display: block;
   width: 100%;
@@ -535,7 +660,6 @@ margin-top: 150px;
 	margin: 10px;
 	float: none;
 }
-
 .sponsor {
 	background: #4e494e;
 }
@@ -570,7 +694,6 @@ margin-top: 150px;
 }
 .rock::before {
 	background-position: -200px -271px;
-	
 }
 .road::before {
 	background-position: 20px -274px;
@@ -681,7 +804,6 @@ ul .color {
 footer {
 	background: #90d23d;
 	padding-bottom: 50px; ;
-
 }
 footer p {
 	color: #fff;
@@ -816,7 +938,7 @@ margin-top: 100px;
 .dribbble::before {
 	left: 140px;
 }
-
+}
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
 .navbar-brand {
@@ -840,7 +962,6 @@ td:last-child {
 .timer {
 	margin: 0 auto 150px auto;
 }
-
 header .gradient {
 	height: 100px;
 }
@@ -919,15 +1040,11 @@ header .gradient {
 .colors {
 	margin-bottom: 55px;
 }
-.blue {
-	height: 250px;
-}
+.blue,
 .green {
 	height: 250px;
 }
-.orange {
-	height: 200px;
-}
+.orange.
 .red {
 	height: 200px;
 }
@@ -975,14 +1092,12 @@ left: 35%;
 	padding-right: 25px;
 	padding-bottom: 10px;
 }
-main h1 {
+main h1,
+th  {
 	font-size: 40px;
 }
 main p {
 	font-size: 18px;
-}
-th {
-	font-size: 40px;
 }
 td:last-child {
 	padding-right: 10px;
@@ -990,15 +1105,13 @@ td:last-child {
 .timer-names {
 	font-size: 16px;
 }
-header .gradient {
+header .gradient,
+main .gradient-reverse  {
 	height: 60px;
 }
 main .gradient {
 		height: 60px;
 		margin-top: 60px;
-}
-main .gradient-reverse {
-	height: 60px;
 }
 .icons {
 	transform: scale(0.5);
@@ -1011,9 +1124,7 @@ main .gradient-reverse {
 	right: 100px;
 	transform: scale(0.4);
 }
-.rewards-position {
-	width: 80%;
-}
+.rewards-position,
 .speakers p {
 	width: 80%;
 }
@@ -1030,15 +1141,11 @@ main .gradient-reverse {
 .envato::before {
 	left: 57%;
 }
-.blue {
-	height: 200px;
-}
+.blue,
 .green {
 	height: 200px;
 }
-.orange {
-	height: 150px;
-}
+.orange,
 .red {
 	height: 150px;
 }
@@ -1102,12 +1209,8 @@ td:last-child {
 .timer {
 	margin-bottom: 100px;
 }
-header .gradient {
-	height: 40px;
-}
-main .gradient {
-		height: 40px;
-}
+header .gradient,
+main .gradient,
 main .gradient-reverse {
 	height: 40px;
 }
@@ -1136,15 +1239,11 @@ main .gradient-reverse {
 	.sponsor .btn {
 	margin-bottom: 20px;	
 	}
-.blue {
-	height: 130px;
-}
+.blue,
 .green {
 	height: 130px;
 }
-.orange {
-	height: 100px;
-}
+.orange,
 .red {
 	height: 100px;
 }
@@ -1162,7 +1261,8 @@ main .gradient-reverse {
 	transform: scale(0.4);
 	left: 5%;
 }
-.road::before {
+.road::before,
+.twitter1::before {
 	left: 25%;
 }
 .envato::before {
@@ -1171,9 +1271,6 @@ main .gradient-reverse {
 .ourlinks::before {	
 left: 10%;
 }
-.twitter1::before {
-	left: 25%;
-	}
 .linkedin::before {
 	left: 40%;
 }
